@@ -1,8 +1,9 @@
 <div>
-  <ul>
+  <ul class="mt-3">
     <% @rooms.each do |room| %>
-      <li><%= link_to "ROOM#{room.id}", room_path(room) %></li>
+      <li class="mb-1 col-4"><%= link_to "ROOM#{room.id}", room_path(room), class: "button is-primary" %></li>
     <% end %>
+    <li class="col-4"><%= link_to '+ NEW ROOM', new_room_path, class: "button is-success" %></li>
   </ul>
-  <li><%= link_to 'NEW ROOM', new_room_path %></li>
+  
 </div>

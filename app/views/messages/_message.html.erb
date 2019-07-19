@@ -1,4 +1,4 @@
-<div class="message">
+<div>
   <div class="kaiwa">
     <% if message.user == current_user %>
       <% position = 'right' %>
@@ -6,7 +6,6 @@
       <% position = 'left' %>
     <% end %>
     <figure class="kaiwa-img-<%= position %>">
-      <%= image_tag 'default.jpg' %>
       <figcaption class="kaiwa-img-description">
         <%= message.user.email %>
       </figcaption>

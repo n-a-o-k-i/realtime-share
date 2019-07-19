@@ -8,10 +8,10 @@
     <%= render @messages %>
   </div>
   <center>
-    <div class="input">
-      <%= text_field nil, nil, 'data-behavior': 'room_speaker', class: 'center-block', style: 'margin-bottom: 20px; width: 100%; max-width: 500px;' %>
+    <div class="col-md-12">
+      <%= text_field nil, nil, 'data-behavior': 'room_speaker', class: 'center-block input', style: 'margin-bottom: 20px; width: 100%; max-width: 500px;' %>
       <br />
-      <%= button_tag '送信', class: 'chat_submit' %>
+      <%= button_tag '送信', class: 'chat_submit button is-success' %>
     </div>
   </center>
 </div>
